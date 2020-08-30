@@ -1,23 +1,45 @@
 {
+	"publisher": "Digoro",
 	"name": "synonym-finder",
-	"displayName": "synonym-finder",
-	"description": "find synonym",
-	"version": "0.0.1",
+	"displayName": "Synonym Finder",
+	"description": "Simply Synonym Finder",
+	"icon": "resources/synonym-brand.png",
+	"version": "1.0.0",
+	"extensionKind": [
+		"ui"
+	],
 	"engines": {
 		"vscode": "^1.48.0"
 	},
+	"bugs": {
+		"url": "https://github.com/Digoro/vscode.synonym/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Digoro/vscode.synonym.git"
+	},
+	"homepage": "https://github.com/Digoro/vscode.synonym",
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+		"synonym",
+		"dictionary",
+		"finder",
+		"word",
+		"translate",
+		"translator",
+		"digoro"
+	],
 	"activationEvents": [
-		"onCommand:synonym-finder.helloWorld"
+		"onCommand:synonym.find"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "synonym-finder.helloWorld",
-				"title": "Hello World"
+				"command": "synonym.find",
+				"title": "Find Synonym"
 			}
 		]
 	},
@@ -30,13 +52,14 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.48.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.0",
 		"@types/node": "^14.0.27",
-		"eslint": "^7.6.0",
+		"@types/node-fetch": "^2.5.7",
+		"@types/vscode": "^1.48.0",
 		"@typescript-eslint/eslint-plugin": "^3.8.0",
 		"@typescript-eslint/parser": "^3.8.0",
+		"eslint": "^7.6.0",
 		"glob": "^7.1.6",
 		"mocha": "^8.0.1",
 		"typescript": "^3.8.3",
