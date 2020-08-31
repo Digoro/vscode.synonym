@@ -4,7 +4,7 @@
 	"displayName": "Synonym Finder",
 	"description": "Simply Synonym Finder",
 	"icon": "resources/synonym-brand.png",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"extensionKind": [
 		"ui"
 	],
